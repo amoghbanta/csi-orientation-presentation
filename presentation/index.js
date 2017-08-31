@@ -96,34 +96,40 @@ export default class Presentation extends React.Component {
                     <Text textColor="white" textFont="monospace" margin="auto auto 5em auto">
                         Hi, I am Amogh
                     </Text>
-                    <Text textColor="white" textFont="monospace" margin="auto auto 5em auto">
-                        I work as a front-end engineer at this company called DigiCred
-                    </Text>
+                    <Appear fid="1">
+                        <Text textColor="white" textFont="monospace" margin="auto auto 5em auto">
+                            I work as a front-end engineer at this company called DigiCred
+                        </Text>
+                    </Appear>
                     <Layout>
-                        <Fill>
-                            <Text textColor="secondary" style={{margin: "1.25rem auto 0"}}>
-                                <Link href="https://github.com/amoghbanta">
-                                    <Image
-                                        height="1.5em"
-                                        src={images.logoGithub}
-                                        style={{verticalAlign: "middle"}}
-                                    />
-                                    {" amoghbanta"}
-                                </Link>
-                            </Text>
-                        </Fill>
-                        <Fill>
-                            <Text textColor="secondary" style={{margin: "1.25rem auto 0"}}>
-                                <Link href="https://twitter.com/amoghbanta">
-                                    <Image
-                                        height="1.5em"
-                                        src={images.logoTwitter}
-                                        style={{verticalAlign: "middle"}}
-                                    />
-                                    @amoghbanta
-                                </Link>
-                            </Text>
-                        </Fill>
+                        <Appear fid="2">
+                            <Fill>
+                                <Text textColor="secondary" style={{margin: "1.25rem auto 0"}}>
+                                    <Link href="https://github.com/amoghbanta">
+                                        <Image
+                                            height="1.5em"
+                                            src={images.logoGithub}
+                                            style={{verticalAlign: "middle"}}
+                                        />
+                                        {" amoghbanta"}
+                                    </Link>
+                                </Text>
+                            </Fill>
+                        </Appear>
+                        <Appear fid="3">
+                            <Fill>
+                                <Text textColor="secondary" style={{margin: "1.25rem auto 0"}}>
+                                    <Link href="https://twitter.com/amoghbanta">
+                                        <Image
+                                            height="1.5em"
+                                            src={images.logoTwitter}
+                                            style={{verticalAlign: "middle"}}
+                                        />
+                                        @amoghbanta
+                                    </Link>
+                                </Text>
+                            </Fill>
+                        </Appear>
                     </Layout>
                 </Slide>
                 <Slide bgColor="#333">
@@ -203,7 +209,7 @@ export default class Presentation extends React.Component {
                     <List ordered start={4} type="1">
                         {this.renderListItem("Game of Thrones ka latest episode download kiya kya?")}
                         <Appear fid="5">
-                            {this.renderListItem("3 class aur attend karne par attendance 67% ho jayegi, uske baad medical certificate de dunga!")}
+                            {this.renderListItem("Agar 3 class aur attend karta hoon to attendance 67% ho jayegi, uske baad medical certificate de dunga!")}
                         </Appear>
                     </List>
                 </Slide>
@@ -250,6 +256,17 @@ export default class Presentation extends React.Component {
                         {this.renderListItem("Whatever you do in these 4 years, be original and don't be sheep.")}
                         <Appear fid="5">
                             {this.renderListItem("Try to make an earning doing something you love. This will give you confidence to take risks.")}
+                        </Appear>
+                    </List>
+                </Slide>
+                <Slide bgColor="#333">
+                    {this.renderHeading("Key things to take from this talk:")}
+                    <List ordered start={1} type="1">
+                        <Appear fid="1">
+                            {this.renderListItem("Whatever yo want to do, do it now!")}
+                        </Appear>
+                        <Appear fid="2">
+                            {this.renderListItem("Don't be sheep, be original.")}
                         </Appear>
                     </List>
                 </Slide>
