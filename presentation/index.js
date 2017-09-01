@@ -263,7 +263,7 @@ export default class Presentation extends React.Component {
                     {this.renderHeading("Key things to take from this talk:")}
                     <List ordered start={1} type="1">
                         <Appear fid="1">
-                            {this.renderListItem("Whatever yo want to do, do it now!")}
+                            {this.renderListItem("Whatever you want to do, do it now!")}
                         </Appear>
                         <Appear fid="2">
                             {this.renderListItem("Don't be sheep, be original.")}
